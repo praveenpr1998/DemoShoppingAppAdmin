@@ -1,0 +1,222 @@
+@import 'Variables.css';
+
+:root {
+    overflow-y: auto;
+}
+
+table {
+    table-layout: fixed;
+}
+
+@media (max-width: 767px)
+{
+    .mp-primary-section {
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+    }
+    .add-product-btn, .add-product-btn:focus, .add-product-btn:active {
+        width: 75%;
+        margin: 10px 0;
+        padding: 10px 0;
+        border:none;
+        outline: none;
+        background-color: var(--primaryGreenRegular);
+        color: var(--text-light);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .mp-primary-section {
+        -ms-overflow-style: none;
+    }
+    .add-product-btn, .add-product-btn:focus, .add-product-btn:active{
+        width: 25%;
+        margin: 10px 0;
+        padding: 10px 0;
+        border:none;
+        outline:none;
+        background-color: var(--primaryGreenRegular);
+        color: var(--text-light);
+    }
+}
+
+@media (min-width: 992px)
+{
+    .mp-primary-section {
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+    }
+    .add-product-btn, .add-product-btn:focus, .add-product-btn:active {
+        width: 25%;
+        margin: 10px 0;
+        padding: 10px 0;
+        border:none;
+        outline:none;
+        background-color: var(--primaryGreenRegular);
+        color: var(--text-light);
+    }
+}
+
+.mp-primary-section::-webkit-scrollbar {
+    display: none;
+}
+
+.mp-spinner-div {
+    margin: 4em 0;
+}
+
+.no-products-msg {
+    margin: 1.5em 0;
+    font-size: var(--emptyMessage);
+    color: var(--titleTextGrey);
+}
+
+.product-section {
+    width: 75%;
+    margin: 15px 0;
+}
+
+.category-title-text {
+    font-size: var(--titleText);
+    color: var(--primaryGreenRegular)
+}
+
+.products-table {
+    width: 100%;
+    margin: 15px 0;
+
+}
+
+th {
+    border: solid var(--primaryGreenRegular);
+    border-width:  0 0.5px 0.5px 0.5px ;
+    text-align: center;
+    background-color: var(--primaryGreenRegular);
+    color: var(--text-light);
+    font-size: var(--tableTitle);
+    font-weight: normal;
+}
+
+td {
+    text-align: center;
+    font-size: var(--tableText);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--tableBgGrey);
+}
+
+.th-name-column {
+    max-width: 20vw;
+    word-wrap: break-word;
+    border: 0.5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+}
+
+.th-options-column-edit {
+    border: 0.5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+    word-wrap: break-word;
+}
+.th-priceUnit-column {
+    border: 0.5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+    word-wrap: break-word;
+}
+.t-pricePerUnit-column {
+    border: 0.5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+    word-wrap: break-word;
+}
+
+.t-name-column {
+    max-width: 20vw;
+    word-wrap: break-word;
+    border: 0.5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+}
+
+.t-options-column-edit {
+    cursor: pointer;
+    border: 0.5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+    word-wrap: break-word;
+    text-decoration: underline;
+}
+.t-priceUnit-column {
+    border: 0.5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+    word-wrap: break-word;
+}
+.t-pricePerUnit-column {
+    border: 0.5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+    word-wrap: break-word;
+}
+
+.modal-header-text {
+    color: var(--primaryGreenRegular);
+    font-size: var(--modal-header-text);
+}
+
+.field-section {
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.field-text {
+    font-size: var(--modal-input-field);
+    color: var(--text-dark);
+}
+
+.modal-text-input, .modal-text-input:focus {
+    width: 100%;
+    margin: 0 0 15px 0;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 0.5em;
+    outline: none;
+    background-color: var(--modalInputBg);
+}
+
+.mp-dropDown, .mp-dropDown:focus {
+    width: 100%;
+    height: 3.2em;
+    padding: 0 5px 0 5px;
+    border: none;
+    border-radius: 0.5em;
+    margin: 0 0 15px 0;
+    outline: none;
+    background: var(--modalInputBg);
+}
+
+.modal-edit-btn, .modal-edit-btn:focus, .modal-edit-btn:active {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border:none;
+    border-radius: 0.5em;
+    outline: none;
+    background-color: var(--primaryGreenRegular);
+    color: var(--text-light);
+}
+
+.modal-delete-btn, .modal-delete-btn:focus, .modal-delete-btn:active {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border:none;
+    border-radius: 0.5em;
+    outline: none;
+    background-color: var(--primaryOrangeRegular);
+    color: var(--text-light);
+}

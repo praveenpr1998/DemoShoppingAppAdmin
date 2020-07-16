@@ -1,0 +1,596 @@
+@import 'Variables.css';
+
+:root {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+table {
+    table-layout: fixed;
+}
+
+/* Mobile devices */
+@media (max-width: 767px)
+{
+    .primary-section {
+        /*height: 90vh;*/
+        /*border: 2px solid red;*/
+        overflow-y: hidden;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+    }
+
+    .col.start{
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .btn-section {
+        width: 90%;
+        margin: 10px 0 10px 0;
+    }
+
+    .active-btn {
+        border: none;
+        background: none;
+        color: var(--primaryGreenRegular);
+        font-size: var(--titleTextMob);
+    }
+
+    .inactive-btn {
+        border: none;
+        background: none;
+        font-size: var(--titleTextMob);
+    }
+
+    .selection-seperator {
+        padding: 0 10px 0 10px;
+        color: var(--primaryGreenRegular);
+    }
+
+    .co-btn-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-picker-section {
+        /*width: 75%;*/
+        display: flex   ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-picker-start-section, .date-picker-end-section  {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 5px 0;
+        padding: 0 20px 0 0;
+    }
+
+    .calender-icon {
+        margin: 0 5px 0 10px;
+    }
+
+    .date-picker-text-input, .date-picker-text-input:focus  {
+        width: 15em;
+        border: none;
+        outline: none;
+        border-radius: 0.5em;
+        padding: 5px 15px;
+        margin: 5px 5px;
+        background-color: var(--inputBg);
+    }
+
+    .filter-btn {
+        border:none;
+        border-radius: 5px;
+        margin: 10px 0 0 0;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenRegular);
+        font-size: var(--downloadOrdersBtnText);
+        color: var(--text-light);
+        cursor: pointer;
+    }
+
+    .filter-btn:hover, .filter-btn:focus, .filter-btn:active {
+        border:none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenMedium);
+    }
+
+    .date-picker-text {
+        display: none;
+    }
+
+    .order-container {
+        width: 95%;
+        border: 0.5px solid #d4caca;
+        border-radius: 15px;
+        margin: 0 0 .938em 0;
+        padding: 15px;
+        line-height: 2;
+        background-color: #F6F6F6;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .primary-section {
+        /*height: 100vh;*/
+        /*border: 2px solid red;*/
+        overflow-y: hidden;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+    }
+
+    .btn-section {
+        width: 75%;
+        margin: 10px 0 10px 0;
+    }
+
+    .active-btn {
+        border: none;
+        background: none;
+        color: var(--primaryGreenRegular);
+        font-size: var(--titleText);
+    }
+
+    .inactive-btn {
+        border: none;
+        background: none;
+        font-size: var(--titleText);
+    }
+
+    .selection-seperator {
+        padding: 0 25px 0 25px;
+        color: var(--primaryGreenRegular);
+    }
+
+    .co-btn-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-picker-section {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-picker-start-section, .date-picker-end-section  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 10px;
+        padding: 0 0 0 10px;
+
+    }
+
+    .calender-icon {
+        margin: 0 5px 0 10px;
+    }
+
+    .date-picker-text-input, .date-picker-text-input:focus  {
+        width: 9em;
+        border: none;
+        outline: none;
+        border-radius: 0.5em;
+        padding: 5px 15px;
+        margin: 5px 5px;
+        background-color: var(--inputBg);
+    }
+
+    .filter-btn {
+        border:none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenRegular);
+        font-size: var(--downloadOrdersBtnText);
+        color: var(--text-light);
+        cursor: pointer;
+    }
+
+    .filter-btn:hover, .filter-btn:focus, .filter-btn:active {
+        border:none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenMedium);
+    }
+
+    .order-container {
+        width: 100%;
+        border: 0.5px solid #d4caca;
+        border-radius: 15px;
+        margin: 0 0 .938em 0;
+        padding: 15px;
+        line-height: 2;
+        background-color: #F6F6F6;
+    }
+}
+
+/* Desktops and TVs */
+@media (min-width: 992px)
+{
+    .primary-section {
+        /*height: 90vh;*/
+        /*border: 2px solid red;*/
+        overflow-y: hidden;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+    }
+
+    .btn-section {
+        width: 20%;
+        margin: 10px 0 10px 0;
+    }
+
+    .active-btn {
+        border: none;
+        background: none;
+        color: var(--primaryGreenRegular);
+        font-size: var(--titleText);
+    }
+
+    .inactive-btn {
+        border: none;
+        background: none;
+        font-size: var(--titleText);
+    }
+
+    .selection-seperator {
+        padding: 0 25px 0 25px;
+        color: var(--primaryGreenRegular);
+    }
+
+    .co-btn-div {
+        display: flex;
+        flex-direction: row ;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-picker-section {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-picker-start-section, .date-picker-end-section  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 10px;
+        padding: 0 0 0 10px;
+
+    }
+
+    .calender-icon {
+        margin: 0 5px 0 10px;
+    }
+
+    .date-picker-text-input, .date-picker-text-input:focus  {
+        width: 9em;
+        border: none;
+        outline: none;
+        border-radius: 0.5em;
+        padding: 5px 15px;
+        margin: 5px 5px;
+        background-color: var(--inputBg);
+    }
+
+    .filter-btn {
+        border:none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenRegular);
+        font-size: var(--downloadOrdersBtnText);
+        color: var(--text-light);
+        cursor: pointer;
+    }
+
+    .filter-btn:hover, .filter-btn:focus, .filter-btn:active {
+        border:none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenMedium);
+    }
+
+    .order-container {
+        width: 100%;
+        border: 0.5px solid #d4caca;
+        border-radius: 15px;
+        margin: 0 0 .938em 0;
+        padding: 15px;
+        line-height: 2;
+        background-color: #F6F6F6;
+    }
+}
+
+.primary-section::-webkit-scrollbar {
+    display: none;
+}
+
+.no-pending-orders-msg {
+    margin: 4em 0;
+    font-size: var(--emptyMessage);
+    color: var(--titleTextGrey);
+}
+
+.ro-items-list {
+    margin: 0 0 0 0.938em;
+}
+
+.selection-section {
+    margin: 0.8em 0 0.8em 0;
+}
+
+.active-btn:hover {
+    color: var(--primaryGreenLight);
+}
+
+.inactive-btn:hover {
+    color: var(--primaryGreenLight);
+}
+
+.active-btn:focus {
+    color: var(--primaryGreenRegular);
+    outline: none;
+}
+
+.inactive-btn:focus {
+    color: var(--primaryGreenRegular);
+    outline: none;
+}
+
+.order-box {
+    width: 75%;
+    border: 2px solid var(--primaryGreenRegular);
+    margin: 15px 0 15px 0;
+    /*border-radius: var(--order-box-border-radius);*/
+}
+
+.title-section {
+    padding: 0.2em 0.8em 0.2em 0.8em;
+    width: 100%;
+    background-color: var(--titleBg );
+}
+
+.user-name {
+    color: var(--text-light);
+    font-size: var(--titleText);
+}
+
+.user-phone-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-img {
+    width: 1.2em;
+}
+
+.user-phone {
+    margin: 0 0 5px 5px;
+    color: var(--text-light);
+    font-size: var(--titleText);
+}
+
+.date-section {
+    width: 100%;
+    padding: 0 0.8em 0 0;
+}
+
+.order-date {
+    font-size: var(--dateText);
+}
+
+.order-list-section {
+    width: 100%;
+    padding: 0 0 0 0.8em;
+}
+
+.order-item-section {
+    width: 100%;
+}
+
+.order-item {
+    font-size: var(--itemText);
+}
+
+.ro-hr {
+    margin: .5em 0;
+    background-color: #D4CACA;
+}
+
+.order-total-section {
+    /* Spaced according to other elements with space on the right */
+    /*margin: 15px 0.8em 15px 0;*/
+
+    /* No Space on the right */
+    margin: 15px 0;
+    padding: 5px 0 5px 15px;
+    background-color: var(--titleBg);
+}
+
+.order-total-text {
+    margin: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: var(--orderTotalText);
+    color: var(--text-dark);
+}
+
+.mark-as-delivered-btn, .mark-as-delivered-btn:focus, .mark-as-delivered-btn:active {
+    border-radius: 8px;
+    padding: 0 2.5em;
+    margin: 0.5em 0.5em;
+    border: none;
+    outline: none;
+    background-color: var(--primaryGreenMedium);
+    color: var(--light);
+}
+
+.reject-order-btn, .reject-order-btn:focus, .reject-order-btn:active {
+    border-radius: 8px;
+    padding: 0 3.7em;
+    margin: 0 0.5em;
+    border: none;
+    outline: none;
+    background-color: var(--primaryOrangeMedium);
+    color: var(--light);
+}
+
+.download-orders-section {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0.938em 0;
+}
+
+.download-orders-btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--primaryOrangeRegular);
+    color: var(--text-light);
+    font-size: var(--downloadOrdersBtnText);
+}
+
+.download-orders-btn:hover, .download-orders-btn:focus  {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--primaryOrangeMedium);
+    color: var(--text-light);
+    font-size: var(--downloadOrdersBtnText  );
+    outline: none;
+}
+
+/* Consolidated Order Page */
+.primary-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 15px 0 15px 0;
+}
+
+.category-text-section {
+    width: 75%;
+}
+
+.category-text {
+    font-size: var(--titleText);
+    color: var(--primaryGreenRegular);
+}
+
+.items-table {
+    width: 75%;
+}
+
+th {
+    border: solid var(--primaryGreenRegular);
+    border-width:  0 0.5px 0.5px 0.5px ;
+    text-align: center;
+    background-color: var(--primaryGreenRegular);
+    color: var(--text-light);
+    font-size: var(--tableTitle);
+    font-weight: normal;
+}
+
+td {
+
+}
+
+tr:nth-child(odd) {
+    background-color: var(--tableBgGrey);
+}
+.name-column {
+    border: 0.5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+    max-width: 35vw;
+    word-wrap: break-word;
+}
+
+.qty-column {
+    border: .5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+    width: 10vw;
+}
+
+.price-column {
+    border: .5px solid var(--tableBorder);
+    text-align: center;
+    font-size: var(--tableText);
+    width: 30vw;
+}
+
+.name-column-th {
+    border: .5px solid var(--primaryGreenRegular);
+    text-align: center;
+    font-size: var(--tableText);
+    max-width: 35vw;
+    word-wrap: break-word;
+}
+
+.qty-column-th {
+    border: .5px solid var(--primaryGreenRegular);
+    text-align: center;
+    font-size: var(--tableText);
+    width: 10vw;
+}
+
+.price-column-th {
+    border: .5px solid var(--primaryGreenRegular);
+    text-align: center;
+    font-size: var(--tableText);
+    width: 30vw;
+}
+
+.total-price-section {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+        margin: 15px 0 0 0;
+}
+
+.total-price-text {
+    font-size: var(--titleText);
+}
+
+.total-price-amount {
+    padding: 0 50px 5px 50px;
+    margin: 0 0 0 10px;
+    font-size: var(--titleText);
+    color: var(--text-light);
+    background-color: var(--primaryGreenRegular);
+}
+
+

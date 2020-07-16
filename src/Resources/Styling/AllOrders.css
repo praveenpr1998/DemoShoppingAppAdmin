@@ -1,0 +1,343 @@
+@import 'Variables.css';
+
+/* Mobile Devices */
+@media (max-width: 767px)
+{
+    .ao-primary-section {
+        /*height: 92vh;*/
+        /*border: 2px solid red;*/
+        /*overflow-y: scroll;*/
+        -ms-overflow-style: none;
+    }
+
+    .date-picker-section {
+        /*width: 75%;*/
+        display: flex   ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-picker-start-section, .date-picker-end-section  {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 5px 0;
+        padding: 0 20px 0 0;
+    }
+
+    .calender-icon {
+        margin: 0 5px 0 10px;
+    }
+
+    .date-picker-text-input, .date-picker-text-input:focus  {
+        width: 15em;
+        border: none;
+        outline: none;
+        border-radius: 0.5em;
+        padding: 5px 15px;
+        margin: 5px 5px;
+        background-color: var(--inputBg);
+    }
+
+    .filter-btn {
+        border:none;
+        border-radius: 5px;
+        margin: 10px 0 0 0;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenRegular);
+        font-size: var(--downloadOrdersBtnText);
+        color: var(--text-light);
+        cursor: pointer;
+    }
+
+    .filter-btn:hover, .filter-btn:focus, .filter-btn:active {
+        border:none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenMedium);
+    }
+
+    .date-picker-text {
+        display: none;
+    }
+
+    .order-container {
+        width: 95%;
+        border: 0.5px solid #d4caca;
+        border-radius: 15px;
+        margin: 0 0 .938em 0;
+        padding: 15px;
+        line-height: 2;
+        background-color: #F6F6F6;
+    }
+
+    .all-orders-hr {
+        border: 2px solid #ef964d;
+        width: 90%;
+        margin: 15px 0 30px 0;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .ao-primary-section {
+        /*height: 94vh;*/
+        /*border: 2px solid red;*/
+        /*overflow-y: scroll;*/
+        -ms-overflow-style: none;
+    }
+
+    .date-picker-section {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-picker-start-section, .date-picker-end-section  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 10px;
+        padding: 0 0 0 10px;
+
+    }
+
+    .calender-icon {
+        margin: 0 5px 0 10px;
+    }
+
+    .date-picker-text-input, .date-picker-text-input:focus  {
+        width: 9em;
+        border: none;
+        outline: none;
+        border-radius: 0.5em;
+        padding: 5px 15px;
+        margin: 5px 5px;
+        background-color: var(--inputBg);
+    }
+
+    .filter-btn {
+        border:none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenRegular);
+        font-size: var(--downloadOrdersBtnText);
+        color: var(--text-light);
+        cursor: pointer;
+    }
+
+    .filter-btn:hover, .filter-btn:focus, .filter-btn:active {
+        border:none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenMedium);
+    }
+
+    .order-container {
+        width: 100%;
+        border: 0.5px solid #d4caca;
+        border-radius: 15px;
+        margin: 0 0 .938em 0;
+        padding: 15px;
+        line-height: 2;
+        background-color: #F6F6F6;
+    }
+
+    .all-orders-hr {
+        border: 2px solid #ef964d;
+        width: 74.5%;
+        margin: 15px 0 30px 0;
+    }
+}
+
+/* Desktops and TVs */
+@media (min-width: 992px)
+{
+    .ao-primary-section {
+        /*height: 91vh;*/
+        /*border: 2px solid red;*/
+        /*overflow-y: scroll;*/
+        -ms-overflow-style: none;
+    }
+
+    .date-picker-section {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .date-picker-start-section, .date-picker-end-section  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 10px;
+        padding: 0 0 0 10px;
+
+    }
+
+    .calender-icon {
+        margin: 0 5px 0 10px;
+    }
+
+    .date-picker-text-input, .date-picker-text-input:focus  {
+        width: 9em;
+        border: none;
+        outline: none;
+        border-radius: 0.5em;
+        padding: 5px 15px;
+        margin: 5px 5px;
+        background-color: var(--inputBg);
+    }
+
+    .filter-btn {
+        border:none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenRegular);
+        font-size: var(--downloadOrdersBtnText);
+        color: var(--text-light);
+        cursor: pointer;
+    }
+
+    .filter-btn:hover, .filter-btn:focus, .filter-btn:active {
+        border:none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: var(--primaryGreenMedium);
+    }
+
+    .order-container {
+        width: 100%;
+        border: 0.5px solid #d4caca;
+        border-radius: 15px;
+        margin: 0 0 .938em 0;
+        padding: 15px;
+        line-height: 2;
+        background-color: #F6F6F6;
+    }
+
+    .all-orders-hr {
+        border: 2px solid #ef964d;
+        width: 74.5%;
+        margin: 15px 0 30px 0;
+    }
+}
+
+.ao-primary-section::-webkit-scrollbar {
+    display: none;
+}
+
+.no-orders-msg {
+    margin: 2em 0;
+    font-size: var(--emptyMessage);
+    color: var(--titleTextGrey);
+}
+
+.ao-items-list {
+    margin: 0 0 0 0.938em;
+}
+
+.all-orders-text {
+    margin: 15px 0;
+    font-size: var(--titleText);
+}
+
+/*.all-orders-hr {*/
+/*    border: 2px solid #ef964d;*/
+/*    width: 74.5%;*/
+/*    margin: 15px 0 30px 0;*/
+/*}*/
+
+.all-orders-bottom-hr {
+    border: 2px solid #ef964d;
+    width: 74.5%;
+    margin: 2em 0;
+}
+
+.order-box {
+    width: 75%;
+    border: 2px solid var(--orderBoxBorder);
+    margin: 15px 0 15px 0;
+    padding: 0 0 15px 0;
+    /*border-radius: var(--order-box-border-radius);*/
+}
+
+.title-section {
+    padding: 0.2em 0.8em 0.2em 0.8em;
+    width: 100%;
+    background-color: var(--titleBg);
+}
+
+.user-name {
+    color: var(--text-light);
+    font-size: var(--titleText);
+}
+.user-phone-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-img {
+    width: 1.2em;
+}
+
+.user-phone {
+    color: var(--text-light);
+    font-size: var(--titleText);
+}
+
+.date-section {
+    width: 100%;
+    padding: 0 0.8em 0 0;
+}
+
+.order-date {
+    font-size: var(--dateText);
+}
+
+.order-list-section {
+    width: 100%;
+    padding: 0 0 0 0.8em;
+}
+
+.order-item-section {
+    width: 100%;
+}
+
+.order-item {
+    font-size: var(--itemText);
+}
+
+.order-total-section {
+    /* Spaced according to other elements with space on the right */
+    /*margin: 15px 0.8em 15px 0;*/
+
+    /* No Space on the right */
+    margin: 15px 0;
+    padding: 5px 0 5px 15px;
+    background-color: var(--titleBg);
+}
+
+.ao-order-status-text {
+    font-weight: bold;
+    font-size: var(--orderTotalText);
+    /*color: var(--text-light);*/
+}
+
+.ao-order-total-text {
+    font-weight: bold;
+    font-size: var(--orderTotalText);
+    /*color: var(--text-light);*/
+}
