@@ -31,6 +31,7 @@ class AllOrders extends Component {
         let total = 0;
         orderItem.items.map(( cartItem) => {
             total += (cartItem['Quantity'] * cartItem['Price']);
+            return null;
         });
         return total;
     };
