@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, NavbarBrand, NavLink, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { NavLink as RouterNavLink } from "react-router-dom" ;
 
 import '../Resources/Styling/AdminNavbar.css';
 import Logo from '../Resources/Images/Logo.png'
 
 class AdminNavbar extends Component {
-    constructor(props) {
-        super(props);
-    }
+  
 
     logout(){
         localStorage.removeItem("token");
